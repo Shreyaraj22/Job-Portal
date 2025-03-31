@@ -7,8 +7,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import AboutPage from './pages/AboutPage';
 
 import Navbar from './components/Navbar';
-import JobApplicationsPage from './pages/JobApplicationPage'; // Import the new page
-
+import JobApplicationsPage from './pages/JobApplicationPage'; 
 // Sample job data (replace with your actual local data)
 const initialJobs = [
   { job_id: '1', job_title: 'Frontend Developer', employer_name: 'Turbostart.', job_city: '', job_state: 'Delhi', job_employment_type: 'Full-time', job_posted_at_datetime_utc: '2025-03-28T10:00:00Z', job_description: 'Looking for a skilled frontend developer...', job_apply_link: 'https://example.com/apply1', employer_logo: 'https://via.placeholder.com/100/FF0000/FFFFFF?Text=TS' },
@@ -49,7 +48,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      {/* You might want to add a link to this page in your Navbar */}
+      
     </Router>
   );
 };
